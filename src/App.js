@@ -1,24 +1,25 @@
-import React from 'react';
+//jshint esversion :9
+
+import React, {useState} from 'react';
+// import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
+import Print from './print';
+import Enter from "./Enter";
+const web3 = require( "./web3");
+const lottery = require('./lottery');
 
-function App() {
+
+
+
+function App(){
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<h1>helo</h1>
+<Print />
+<hr />
+<Enter />
     </div>
   );
 }
